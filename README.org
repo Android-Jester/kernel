@@ -1,0 +1,4 @@
+#+title: Re-Linux_Kernel
+#+DESCRIPTION: This is my custom implementation of the Linux kernel, the project starts after I have finished analysing the current Linux kernel
+
+* File Structure
