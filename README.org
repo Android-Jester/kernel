@@ -2,3 +2,48 @@
 #+DESCRIPTION: This is my custom implementation of the Linux kernel, the project starts after I have finished analysing the current Linux kernel
 
 * File Structure
+.
+├── build.zig
+├── build.zig.zon
+├── LICENSE
+├── MakeFile
+├── README.org
+├── src
+│   ├── k_lib.c
+│   ├── main.zig
+│   └── root.zig
+├── zig-cache
+│   ├── h
+│   │   ├── 43c8c2e1bd9330e857a2e83b64be0e4f.txt
+│   │   ├── 854cb84ec1091aa8ef3d35fd953d0f46.txt
+│   │   ├── b820073f32204906ff521d018656659f.txt
+│   │   ├── b9b73a958845964d54dee7d650b2e59a.txt
+│   │   └── timestamp
+│   ├── o
+│   │   ├── 1156c6011de82ce88b005afd82a5f230
+│   │   │   ├── libRe-Linux_Kernel.a
+│   │   │   └── libRe-Linux_Kernel.a.o
+│   │   ├── 2018c681d7183a743ecf0b9a177f5388
+│   │   ├── 3bb5422aa04a8c4119388c1b6ec70acd
+│   │   │   └── dependencies.zig
+│   │   ├── 7e9af3189bffa3d19c005f315d6fe3eb
+│   │   │   ├── build
+│   │   │   └── build.o
+│   │   ├── 9ae59ddbf3112ec859c6425bc2a6b6dd
+│   │   │   ├── Re-Linux_Kernel
+│   │   │   └── Re-Linux_Kernel.o
+│   │   └── b8c8861501db9122cfc831471b7c366b
+│   │       ├── build
+│   │       └── build.o
+│   ├── tmp
+│   └── z
+│       ├── 12101ffdbac093c1eddeda60ecf139bb
+│       ├── 63ee89e20859497a3d0a1b7f6efb8ae1
+│       └── 76204a2b49800f014ac7bafd31a3e72a
+└── zig-out
+    ├── bin
+    │   └── Re-Linux_Kernel
+    └── lib
+        └── libRe-Linux_Kernel.a
+
+16 directories, 27 files
