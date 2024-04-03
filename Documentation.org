@@ -1,0 +1,10 @@
+#+title: Linux Kernel Documentation(SELF)
+#+description: This is just a little learner's notes for writing the code for a custom linux kernel written from scratch
+
+
+* Requirements for Kernel Writing
+- Assembly programming
+- Basis in memory manipulation for display
+- Driver Building
+
+
