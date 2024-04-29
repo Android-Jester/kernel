@@ -1,0 +1,19 @@
+CC=i686-elf-gcc
+all: kernel_build build_iso run
+build: kernel_build build_iso
+
+
+.PHONY: all
+kernel_build: ./src/kmain.c ./src/boot.asm ./src/linker.ld
+	mkdir -p ./lib ./build
+	nasm -felf32 ./src/boot.asm -o ./lib/boot.o
+	$(CC) -c ./src/kmain.c -o ./lib/kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
+	$(CC) -T ./src/linker.ld -o ./build/starter.bin -ffreestanding -O2 -nostdlib ./lib/boot.o ./lib/kernel.o -lgcc
+
+build_iso:
+	./build_iso
+.PHONY: build_iso
+run:
+	qemu-system-i386 -cdrom ./build/basicOS.iso
+clean:
+	rm -rf ./lib ./build
